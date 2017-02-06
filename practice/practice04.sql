@@ -1,10 +1,10 @@
--- 문제1
+-- 문제1 (56명)
 select count(*)
   from employees
  where salary < ( select avg(salary) from employees );
 
  
---문제2
+--문제2 (11명)
   select employee_id as "사번",
          last_name as "성",
 	     salary as "급여"
@@ -41,7 +41,7 @@ order by salary desc;
 order by a.salary desc;
 
 
---문제3
+--문제3(19명)
  select a.job_title as "업무",
         b.sum_salary as "급여총합"
    from jobs a,
@@ -61,7 +61,7 @@ group by a.job_title
 order by SUM(b.salary) desc;
   	   
 
--- 문제4
+-- 문제4 (38명)
 select a.employee_id as "사번", 
        a.last_name as "성", 
 	   a.salary as "급여"
