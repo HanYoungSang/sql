@@ -55,15 +55,3 @@ group by job_id
 order by diff_salary desc;
 
 select job_title from jobs where job_id = 'SA_REP';
-		 
-
-
-
-    
-  
-
-
-
-
-
-    	
